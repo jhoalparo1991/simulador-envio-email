@@ -8,4 +8,4 @@ Tecnologias
 
 Sistema que simula el envio de mensajes
 
-[Imagen del sitio](img/simulador.PNG)
+![Imagen del sitio](img/simulador.PNG)
