@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send E-mail</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-sm-12 col-md-10 mx-auto">
+          <main class="card">
+            <header class="card-header bg-info text-white">
+              <h1 class="card-title">Enviar mensaje</h1>
+            </header>
+            <section class="p-4">
+              <form class="form">
+                <div class="form-group">
+                  <label for="email">Para</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control shadow-lg p-3 mb-5 bg-white rounded border-top-0 border-left-0 border-right-0"
+                    autocomplete="off"
+                    placeholder="Email..."
+                  />
+                </div>
+                <div class="">
+                  <label for="asunto">Asunto</label>
+                  <input
+                    type="text"
+                    name="asunto"
+                    id="asunto"
+                    autocomplete="off"
+                    class="form-control shadow-lg p-3 mb-5 bg-white rounded border-top-0 border-left-0 border-right-0"
+                    placeholder="Asunto..."
+                  />
+                </div>
+                <div class="">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea
+                    name="mensaje"
+                    id="mensaje"
+                    class="form-control shadow-lg p-3 mb-5 bg-white rounded border-top-0 border-left-0 border-right-0"
+                    cols="30"
+                    rows="2"
+                    placeholder="Mensaje..."
+                  ></textarea>
+                </div>
+                <div class="form-group py-2 d-none spinner">
+                    <img src="./img/loading.gif" class="img-fluid w-25 d-flex mx-auto" alt="">
+                </div>
+                <div class="form-group mt-2">
+                  <button class="btn btn-info btn-lg text-white" id="send">
+                    SEND
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+
+                  <button class="btn btn-danger btn-lg text-white" 
+                  id="reset_form">
+                    RESET FORM
+                    <i class="fas fa-trash-restore"></i>
+                  </button>
+                </div>
+              </form>
+            </section>
+          </main>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
